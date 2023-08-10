@@ -20,7 +20,7 @@ body {
 .main-page {
     width: 100%;
     height: 100vh;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
 }
@@ -158,4 +158,57 @@ body {
 
 /* Fin del lado derecho */
 
+/* Inicio del pie depagina */
+.main-page-footer{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background-color: #f5f4f4;
+    padding: 1.5rem;
+    border-top: 0.1rem solid #ddd;
+}
+
+.main-page-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-page-footer a{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #444;
+    font-weight: 300;
+}
+/* Fin del pie depagina */
 /* Fin de la pagina principal */
+
+/* Pagina de inicio de sesión */
+.login-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-row-gap: 1.5rem;
+}
+
+/* Inicio de la navegacion */
+.login-page-nav{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: #fff;
+    padding: 2.5rem 0;
+}
+/* Fin de la navegacion */
+
+/* Inicio de login */
+.login{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+    width: 100rem;
+}
+/* Fin del login */
+
+/* Fin de inicio de sesión */
